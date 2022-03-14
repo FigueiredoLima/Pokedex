@@ -1,0 +1,74 @@
+.listagem {
+    max-width: 250px;
+ 
+}
+
+.table{
+    
+      width: 250px;
+      height: 720px;
+      overflow-y: auto;
+}
+.rolagem{
+    margin: 5px;
+    padding: 10px;
+    width: 230px;
+}
+
+.listagem .pokemon {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    background-color: #6B727A;
+    color: #FFFFFF;
+    padding: 0 5px;
+    cursor: pointer;
+    border-radius: 30px;
+    min-height: 70px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    transition: 0.15s ease-in-out;
+}
+
+
+
+.listagem .pokemon:hover {
+    transform: scale(1.1);
+    border:solid 1px;
+    box-shadow: 0px 3px 5px 0px #FA6668;
+
+}
+
+.listagem .pokemon img {
+    width: 25%;
+    border-radius: 50%;
+}
+
+.listagem .pokemon span {
+    padding-right: 20px;
+}
+
+.listagem .pokemon.ativo {
+    background-color: #FA6668;
+}
+
+
+::-webkit-scrollbar {
+    width: 10px;
+
+
+}
+::-webkit-scrollbar-thumb {
+    background: #6B727A;
+    border-radius: 20px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #FA6668;
+    border-radius: 20px;
+}
+::-webkit-scrollbar-track {
+    background-color: #ccc;
+}
+::-webkit-scrollbar-button {
+    background-color: #0000;
+}
